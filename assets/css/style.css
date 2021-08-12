@@ -1,0 +1,87 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4caf50;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+button {
+  background-color: #035aa6;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 600px;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 0;
+}
+
+.small {
+  width: 450px;
+  border: 10px solid gray;
+  border-radius: 20px;
+  padding: 0;
+  font-size: 30px;
+  color: lightgreen;
+  transition: all 1s;
+}
+
+.middle {
+  border: 30px solid gray;
+  transition: all 1s;
+}
+
+.big {
+  max-width: 590px;
+  border: 60px solid gray;
+  box-shadow: 10px 10px 10px 10xpx;
+  color: yellow;
+  font-size: 70;
+  transition: all 1s;
+}
+
+#coco {
+  display: inline-block;
+  margin-left: 2vw;
+  width: 4px;
+  height: 4px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

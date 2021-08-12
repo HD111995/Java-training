@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Training</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        input[type=text],
+        select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+    
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+    
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+    
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+      </style>
+    
+</head>
+<body>
+    <ul>
+        <li><a class="nav" id="navHome" href="#home">Home</a></li>
+        <li><a class="nav" id="navNews" href="#news">News</a></li>
+        <li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+        <li class="nav" style="float:right"><a class="active" id="navChange" onclick="change()">Change me</a></li>
+      </ul>
+      <br><br><br><br><hr>
+      <div>
+        <form id="form1" onsubmit="return false">
+          <label for="vorname" >Vorname</label>
+          <input type="text" id="vorname" name="vorname"
+            placeholder="Dein Name...">
+            <label for="nachname">Last Name</label>
+            <input type="text" id="nachname"
+            name="nachname" placeholder="Dein Nachname...">
+            <label for="land">Land</label>
+            <select id="land" name="land">
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="Usa">USA</option>
+          </select>
+          <input type="submit" value="Submit" onclick="print()">
+        </form>
+      </div>
+    <br><br><br><br><br><hr>
+    <button onclick="small()">Small</button>
+	<button  onclick="middle()">Middle</button>
+    <button onclick="big()">Big & Crazy</button>
+   
+
+<div class="wrapper">
+        <div >
+            <h1 id="element"  class="small">Hallo classList!</h1>
+        </div>
+    </div>
+    <br><br><br><br><hr>
+    <button id="color" onclick="back()">change BG color</button>
+    <div id="coco"></div>
+
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
